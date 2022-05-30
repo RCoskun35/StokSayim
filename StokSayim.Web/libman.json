@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "devextreme@21.2.7",
+      "destination": "wwwroot/lib/devextreme/"
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-Q8L9BMPG99"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'G-Q8L9BMPG99');
+		
+	</script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link href="~/assets/build/styles/ltr-core.css" rel="stylesheet">
+		<link href="~/assets/build/styles/ltr-vendor.css" rel="stylesheet">
+		<link href="~/assets/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	    <link href="~/lib/devextreme/css/dx.light.min.css" rel="stylesheet">
+	
+	<title>Dashboard | Panely</title>
+</head>
+
+<body class="theme-light preload-active aside-active aside-mobile-minimized aside-desktop-maximized" id="fullscreen">
+	<!-- BEGIN Preload -->
+	<div class="preload">
+		<div class="preload-dialog">
+			<!-- BEGIN Spinner -->
+			<div class="spinner-border text-primary preload-spinner"></div>
+			<!-- END Spinner -->
+		</div>
+	</div>
+	<!-- END Preload -->
+	<!-- BEGIN Page Holder -->
+	<div class="holder">
+	
+	@Html.Partial("LeftPartial")
+		<!-- BEGIN Page Wrapper -->
+		<div class="wrapper">
+			@Html.Partial("HeaderPartial")
+			<!-- BEGIN Float Button -->
+			
+	<!-- END Float Button -->
+			@RenderBody()
+		
+
+			@*Footer icin yer*@
+		</div>
+		<!-- END Page Wrapper -->
+	</div>
+	<!-- END Page Holder -->
+	
+	<div class="float-btn float-btn-left">
+			<button class="btn btn-flat-primary btn-icon mb-2" id="theme-toggle" data-toggle="tooltip" data-placement="right" title="Temayı Değiştir">
+			<i class="fa fa-moon"></i>
+			</button>
+			</div>
+
+	
+
+
+</body>
+
+	<script type="text/javascript" src="~/assets/build/scripts/core.js"></script>
+	<script type="text/javascript" src="~/assets/build/scripts/vendor.js"></script>
+		
+</html>
